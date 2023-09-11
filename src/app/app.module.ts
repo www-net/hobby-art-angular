@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './home/main-page/main-page.component';
+import { MacrameComponent } from './catalog/macrame/macrame.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CatalogComponent,
     HomeComponent,
-    MainPageComponent
+    MainPageComponent,
+    MacrameComponent,
   ],
   imports: [
     BrowserModule,

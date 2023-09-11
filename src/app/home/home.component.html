@@ -9,7 +9,7 @@
                 </a>
                 <ul class="main-menu">
                     <li class="main-menu__item">
-                        <a class="main-menu__link" [routerLink]="['/catalog']" routerLinkActive="main-menu__link--active" [routerLinkActiveOptions]="{exact: true}">Каталог</a>
+                        <a class="main-menu__link" [routerLink]="['/catalog']" routerLinkActive="main-menu__link--active">Каталог</a>
                     </li>
                     <li class="main-menu__item">
                         <a class="main-menu__link" href="./payment-and-delivery.html">Оплата и доставка</a>
@@ -33,7 +33,7 @@
 
                     <ul class="user-menu">
                         <li class="user-menu__item">
-                            <a class="user-menu__button login-link" href="#">
+                            <button type="button" class="user-menu__button login-link" href="#">
                                 <span class="user-menu__button-inner">
                                     <span class="user-menu__button-text">
 
@@ -46,7 +46,7 @@
                                         Войти
                                     </span>
                                 </span>
-                            </a>
+                            </button>
                         </li>
                         <li class="user-menu__item">
                             <a class="user-menu__button" href="#">
@@ -109,7 +109,8 @@
                             обеспечивает широкому кругу (специалистов)
                             участие в формировании форм воздействия.
                         </p>
-                        <a class="button button--color slider__link" href="./catalog.html">
+                        <!-- <a class="button button--color slider__link" href="./catalog.html" (click)="goToModalAccount()"> -->
+                        <a class="button button--color slider__link" (click)="goToModalAccount()">
                             <span class="button__inner">
                                 <span class="button__text">В каталог</span>
                             </span>
